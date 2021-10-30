@@ -6,7 +6,7 @@ export default class Footer extends Component {
      render() {
           return (
                <div>
-                    <a href="#" className="scrollToTop">
+                    <a href="#!" className="scrollToTop">
                          <i className="fas fa-angle-double-up" />
                     </a>
                     {/* footer-section start */}

@@ -1037,7 +1037,7 @@ export default class Blog extends Component {
                                                                  <li className="page-item">
                                                                       <a
                                                                            className="page-link"
-                                                                           href="#"
+                                                                           href="#!"
                                                                       >
                                                                            <img
                                                                                 src="images/arrow-left.png"
@@ -1048,7 +1048,7 @@ export default class Blog extends Component {
                                                                  <li className="page-item">
                                                                       <a
                                                                            className="page-link"
-                                                                           href="#"
+                                                                           href="#!"
                                                                       >
                                                                            01
                                                                       </a>
@@ -1056,7 +1056,7 @@ export default class Blog extends Component {
                                                                  <li className="page-item">
                                                                       <a
                                                                            className="page-link active"
-                                                                           href="#"
+                                                                           href="#!"
                                                                       >
                                                                            02
                                                                       </a>
@@ -1064,7 +1064,7 @@ export default class Blog extends Component {
                                                                  <li className="page-item">
                                                                       <a
                                                                            className="page-link"
-                                                                           href="#"
+                                                                           href="#!"
                                                                       >
                                                                            03
                                                                       </a>
@@ -1072,7 +1072,7 @@ export default class Blog extends Component {
                                                                  <li className="page-item">
                                                                       <a
                                                                            className="page-link"
-                                                                           href="#"
+                                                                           href="#!"
                                                                       >
                                                                            04
                                                                       </a>
@@ -1080,7 +1080,7 @@ export default class Blog extends Component {
                                                                  <li className="page-item">
                                                                       <a
                                                                            className="page-link"
-                                                                           href="#"
+                                                                           href="#!"
                                                                       >
                                                                            <img
                                                                                 src="images/arrow-right.png"
@@ -1122,7 +1122,7 @@ export default class Blog extends Component {
                                                             />
                                                        </div>
                                                        <div className="right-item">
-                                                            <a href="#">
+                                                            <a href="#!">
                                                                  <h5>Design</h5>
                                                             </a>
                                                             <p>
@@ -1139,7 +1139,7 @@ export default class Blog extends Component {
                                                             />
                                                        </div>
                                                        <div className="right-item">
-                                                            <a href="#">
+                                                            <a href="#!">
                                                                  <h5>
                                                                       Marketing
                                                                  </h5>
@@ -1159,7 +1159,7 @@ export default class Blog extends Component {
                                                             />
                                                        </div>
                                                        <div className="right-item">
-                                                            <a href="#">
+                                                            <a href="#!">
                                                                  <h5>
                                                                       Tutorial
                                                                  </h5>
@@ -1175,22 +1175,22 @@ export default class Blog extends Component {
                                              <div className="social-area">
                                                   <h3>Follow Us</h3>
                                                   <div className="social d-flex">
-                                                       <a href="#">
+                                                       <a href="#!">
                                                             <i className="fab fa-facebook-f" />
                                                        </a>
-                                                       <a href="#">
+                                                       <a href="#!">
                                                             <i className="fab fa-twitter" />
                                                        </a>
                                                        <a
-                                                            href="#"
+                                                            href="#!"
                                                             className="active"
                                                        >
                                                             <i className="fab fa-instagram" />
                                                        </a>
-                                                       <a href="#">
+                                                       <a href="#!">
                                                             <i className="fab fa-pinterest-p" />
                                                        </a>
-                                                       <a href="#">
+                                                       <a href="#!">
                                                             <i className="fab fa-linkedin-in" />
                                                        </a>
                                                   </div>
@@ -1199,55 +1199,55 @@ export default class Blog extends Component {
                                                   <h3>Tags</h3>
                                                   <div className="tags">
                                                        <a
-                                                            href="#"
+                                                            href="#!"
                                                             className="tag-item"
                                                        >
                                                             App
                                                        </a>
                                                        <a
-                                                            href="#"
+                                                            href="#!"
                                                             className="tag-item"
                                                        >
                                                             Development
                                                        </a>
                                                        <a
-                                                            href="#"
+                                                            href="#!"
                                                             className="tag-item"
                                                        >
                                                             Mac OS
                                                        </a>
                                                        <a
-                                                            href="#"
+                                                            href="#!"
                                                             className="tag-item"
                                                        >
                                                             Mobile
                                                        </a>
                                                        <a
-                                                            href="#"
+                                                            href="#!"
                                                             className="tag-item active"
                                                        >
                                                             Web Design
                                                        </a>
                                                        <a
-                                                            href="#"
+                                                            href="#!"
                                                             className="tag-item"
                                                        >
                                                             UI/UX
                                                        </a>
                                                        <a
-                                                            href="#"
+                                                            href="#!"
                                                             className="tag-item"
                                                        >
                                                             Visual Design
                                                        </a>
                                                        <a
-                                                            href="#"
+                                                            href="#!"
                                                             className="tag-item"
                                                        >
                                                             Interaction Design
                                                        </a>
                                                        <a
-                                                            href="#"
+                                                            href="#!"
                                                             className="tag-item"
                                                        >
                                                             UX Research

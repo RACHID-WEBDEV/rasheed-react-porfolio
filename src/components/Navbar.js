@@ -81,7 +81,7 @@ export default class Navbar extends Component {
                                                        </li>
                                                        <li>
                                                             <NavLink
-                                                                 to="/notfound"
+                                                                 to="/page-not-found"
                                                                  activeClassName={`active`}
                                                             >
                                                                  Not
