@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import logo from "./../images/logo.png";
 
 export default class Footer extends Component {
      render() {
@@ -36,7 +37,7 @@ export default class Footer extends Component {
                                              <div className="col-lg-4 col-md-4 col-sm-4 d-flex align-items-center justify-cen">
                                                   <a href="index.html">
                                                        <img
-                                                            src="images/logo.png"
+                                                            src={logo}
                                                             alt="logo"
                                                        />
                                                   </a>

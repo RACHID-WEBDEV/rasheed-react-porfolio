@@ -1,40 +1,50 @@
-import React from "react";
+import React, { Suspense } from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
 
+import Index from "./pages/Index";
+// import About from "./pages/About";
+import Blog from "./pages/Blog";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import PageNotFound from "./pages/PageNotFound";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Blog from "./components/Blog";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-
-import {
-     BrowserRouter as Router,
-     HashRouter,
-     Route,
-     Switch,
-} from "react-router-dom";
 import Footer from "./components/Footer";
-// import "./App.css";
-// import Uservey from "./Uservey";
+
+const About = React.lazy(() => import("./pages/About"));
 
 function App() {
      return (
           <div>
-               <Router>
-                    <Navbar />
-
-                    <div>
-                         <Switch>
-                              <Route exact path="/" component={Home} />
-                              <Route path="/about" component={About} />
-                              <Route path="/portfolio" component={Portfolio} />
-                              <Route path="/blog" component={Blog} />
-                              <Route Path="/contact" component={Contact} />
-                         </Switch>
-                    </div>
-                    <Footer />
-               </Router>
-               {/* <Uservey /> */}
+               <Navbar />
+               <Suspense
+                    fallback={<div className="preloader" id="preloader"></div>}
+               >
+                    <Switch>
+                         <Route exact path="/">
+                              <Index />
+                         </Route>
+                         <Route path="/about">
+                              <About />
+                         </Route>
+                         <Route Path="/contact">
+                              <Contact />
+                         </Route>
+                         <Route path="/portfolio">
+                              <Portfolio />
+                         </Route>
+                         <Route path="/blog">
+                              <Blog />
+                         </Route>
+                         <Route path={`/page-not-found`}>
+                              <PageNotFound />
+                         </Route>
+                         <Route path="*">
+                              <Redirect to="/page-not-found" />
+                              {/* <PageNotFound /> */}
+                         </Route>
+                    </Switch>
+               </Suspense>
+               <Footer />
           </div>
      );
 }

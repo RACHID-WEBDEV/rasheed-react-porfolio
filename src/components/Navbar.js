@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import logo from "./../images/logo.png";
 
 export default class Navbar extends Component {
      render() {
@@ -13,11 +14,10 @@ export default class Navbar extends Component {
                                         <div className="logo-section flex-grow-1 d-flex align-items-center">
                                              <Link
                                                   className="site-logo site-title"
-                                                  exact
                                                   to="/"
                                              >
                                                   <img
-                                                       src="images/logo.png"
+                                                       src={logo}
                                                        alt="site-logo"
                                                   />
                                              </Link>
@@ -40,39 +40,52 @@ export default class Navbar extends Component {
                                              >
                                                   <ul className="navbar-nav main-menu ml-auto">
                                                        <li>
-                                                            {/* <a
-                                                                 href="index.html"
-                                                                 className="active"
-                                                            >
-                                                                 Home
-                                                            </a> */}
-                                                            <Link
-                                                                 className="active"
-                                                                 exact
+                                                            <NavLink
+                                                                 activeClassName={`active`}
                                                                  to="/"
                                                             >
                                                                  Home
-                                                            </Link>
+                                                            </NavLink>
                                                        </li>
                                                        <li>
-                                                            <Link to="/about">
+                                                            <NavLink
+                                                                 to="/about"
+                                                                 activeClassName={`active`}
+                                                            >
                                                                  About Us
-                                                            </Link>
+                                                            </NavLink>
                                                        </li>
                                                        <li>
-                                                            <Link to="/portfolio">
+                                                            <NavLink
+                                                                 to="/portfolio"
+                                                                 activeClassName={`active`}
+                                                            >
                                                                  Portfolio
-                                                            </Link>
+                                                            </NavLink>
                                                        </li>
                                                        <li>
-                                                            <Link to="/blog">
+                                                            <NavLink
+                                                                 to="/blog"
+                                                                 activeClassName={`active`}
+                                                            >
                                                                  Blog
-                                                            </Link>
+                                                            </NavLink>
                                                        </li>
                                                        <li>
-                                                            <Link to="/contact">
+                                                            <NavLink
+                                                                 to="/contact"
+                                                                 activeClassName={`active`}
+                                                            >
                                                                  Contact
-                                                            </Link>
+                                                            </NavLink>
+                                                       </li>
+                                                       <li>
+                                                            <NavLink
+                                                                 to="/notfound"
+                                                                 activeClassName={`active`}
+                                                            >
+                                                                 Not
+                                                            </NavLink>
                                                        </li>
                                                   </ul>
                                              </div>
@@ -82,6 +95,7 @@ export default class Navbar extends Component {
                                                   target="_blank"
                                                   href="https://wa.me/+2347064245842"
                                                   className="cmn-btn"
+                                                  rel="noopener noreferrer"
                                              >
                                                   Contact Me
                                              </a>
